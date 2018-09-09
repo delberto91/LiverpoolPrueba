@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160A389E21458E8E00A8A972 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A389D21458E8E00A8A972 /* APIManager.swift */; };
+		160A38A121458F3F00A8A972 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A38A021458F3F00A8A972 /* Models.swift */; };
+		160A38A3214594C000A8A972 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A38A2214594C000A8A972 /* TableViewCell.swift */; };
+		160A38A5214596C000A8A972 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160A38A4214596C000A8A972 /* Tools.swift */; };
 		164E705D21458B73000068B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E705C21458B73000068B4 /* AppDelegate.swift */; };
 		164E705F21458B73000068B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E705E21458B73000068B4 /* ViewController.swift */; };
 		164E706221458B73000068B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164E706021458B73000068B4 /* Main.storyboard */; };
 		164E706521458B73000068B4 /* Prueba_Liverpool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 164E706321458B73000068B4 /* Prueba_Liverpool.xcdatamodeld */; };
 		164E706721458B75000068B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164E706621458B75000068B4 /* Assets.xcassets */; };
 		164E706A21458B75000068B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164E706821458B75000068B4 /* LaunchScreen.storyboard */; };
+		16C734BC2145D3AE00E187D9 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C734BB2145D3AE00E187D9 /* SearchResultsViewController.swift */; };
+		16C734C12145D45000E187D9 /* BusquedaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C734C02145D45000E187D9 /* BusquedaTableViewCell.swift */; };
+		727459C9538819B370552BAE /* Pods_Prueba_Liverpool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034FCE660D5CCBEE277EFF45 /* Pods_Prueba_Liverpool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034FCE660D5CCBEE277EFF45 /* Pods_Prueba_Liverpool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prueba_Liverpool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		160A389D21458E8E00A8A972 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		160A38A021458F3F00A8A972 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		160A38A2214594C000A8A972 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		160A38A4214596C000A8A972 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		164E705921458B73000068B4 /* Prueba_Liverpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prueba_Liverpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		164E705C21458B73000068B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164E705E21458B73000068B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +36,10 @@
 		164E706621458B75000068B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		164E706921458B75000068B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		164E706B21458B75000068B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C734BB2145D3AE00E187D9 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		16C734C02145D45000E187D9 /* BusquedaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaTableViewCell.swift; sourceTree = "<group>"; };
+		4EE14ED14E4E30DF627368BA /* Pods-Prueba_Liverpool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba_Liverpool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Prueba_Liverpool/Pods-Prueba_Liverpool.debug.xcconfig"; sourceTree = "<group>"; };
+		860EB2C8CE51C2D4EBC34A93 /* Pods-Prueba_Liverpool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba_Liverpool.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prueba_Liverpool/Pods-Prueba_Liverpool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727459C9538819B370552BAE /* Pods_Prueba_Liverpool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160A389F21458F2300A8A972 /* ConnectionManager */ = {
+			isa = PBXGroup;
+			children = (
+				160A389D21458E8E00A8A972 /* APIManager.swift */,
+			);
+			path = ConnectionManager;
+			sourceTree = "<group>";
+		};
 		164E705021458B73000068B4 = {
 			isa = PBXGroup;
 			children = (
 				164E705B21458B73000068B4 /* Prueba_Liverpool */,
 				164E705A21458B73000068B4 /* Products */,
+				FF42B18D5910789255AAE99D /* Pods */,
+				2A0333564673FE0402D5E1F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				164E705C21458B73000068B4 /* AppDelegate.swift */,
-				164E705E21458B73000068B4 /* ViewController.swift */,
+				160A38A021458F3F00A8A972 /* Models.swift */,
+				16C734BE2145D3FD00E187D9 /* Tools */,
+				16C734BD2145D3B400E187D9 /* Catalogo */,
+				160A389F21458F2300A8A972 /* ConnectionManager */,
+				16C734BF2145D42C00E187D9 /* Búsqueda */,
 				164E706021458B73000068B4 /* Main.storyboard */,
 				164E706621458B75000068B4 /* Assets.xcassets */,
 				164E706821458B75000068B4 /* LaunchScreen.storyboard */,
@@ -67,6 +98,50 @@
 			path = Prueba_Liverpool;
 			sourceTree = "<group>";
 		};
+		16C734BD2145D3B400E187D9 /* Catalogo */ = {
+			isa = PBXGroup;
+			children = (
+				164E705E21458B73000068B4 /* ViewController.swift */,
+				160A38A2214594C000A8A972 /* TableViewCell.swift */,
+			);
+			path = Catalogo;
+			sourceTree = "<group>";
+		};
+		16C734BE2145D3FD00E187D9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				160A38A4214596C000A8A972 /* Tools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		16C734BF2145D42C00E187D9 /* Búsqueda */ = {
+			isa = PBXGroup;
+			children = (
+				16C734BB2145D3AE00E187D9 /* SearchResultsViewController.swift */,
+				16C734C02145D45000E187D9 /* BusquedaTableViewCell.swift */,
+			);
+			name = "Búsqueda";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2A0333564673FE0402D5E1F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				034FCE660D5CCBEE277EFF45 /* Pods_Prueba_Liverpool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF42B18D5910789255AAE99D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EE14ED14E4E30DF627368BA /* Pods-Prueba_Liverpool.debug.xcconfig */,
+				860EB2C8CE51C2D4EBC34A93 /* Pods-Prueba_Liverpool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 164E706E21458B75000068B4 /* Build configuration list for PBXNativeTarget "Prueba_Liverpool" */;
 			buildPhases = (
+				BF20A03770461003A4516918 /* [CP] Check Pods Manifest.lock */,
 				164E705521458B73000068B4 /* Sources */,
 				164E705621458B73000068B4 /* Frameworks */,
 				164E705721458B73000068B4 /* Resources */,
+				5A9581FBEE5013C9B25CFE24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +210,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A9581FBEE5013C9B25CFE24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Prueba_Liverpool/Pods-Prueba_Liverpool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Prueba_Liverpool/Pods-Prueba_Liverpool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF20A03770461003A4516918 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Prueba_Liverpool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		164E705521458B73000068B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160A389E21458E8E00A8A972 /* APIManager.swift in Sources */,
+				16C734C12145D45000E187D9 /* BusquedaTableViewCell.swift in Sources */,
+				16C734BC2145D3AE00E187D9 /* SearchResultsViewController.swift in Sources */,
 				164E705F21458B73000068B4 /* ViewController.swift in Sources */,
 				164E706521458B73000068B4 /* Prueba_Liverpool.xcdatamodeld in Sources */,
+				160A38A3214594C000A8A972 /* TableViewCell.swift in Sources */,
+				160A38A5214596C000A8A972 /* Tools.swift in Sources */,
 				164E705D21458B73000068B4 /* AppDelegate.swift in Sources */,
+				160A38A121458F3F00A8A972 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +404,13 @@
 		};
 		164E706F21458B75000068B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE14ED14E4E30DF627368BA /* Pods-Prueba_Liverpool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63ZV3S44QC;
 				INFOPLIST_FILE = Prueba_Liverpool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +424,13 @@
 		};
 		164E707021458B75000068B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860EB2C8CE51C2D4EBC34A93 /* Pods-Prueba_Liverpool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63ZV3S44QC;
 				INFOPLIST_FILE = Prueba_Liverpool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
