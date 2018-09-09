@@ -14,7 +14,6 @@
 		164E705D21458B73000068B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E705C21458B73000068B4 /* AppDelegate.swift */; };
 		164E705F21458B73000068B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E705E21458B73000068B4 /* ViewController.swift */; };
 		164E706221458B73000068B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164E706021458B73000068B4 /* Main.storyboard */; };
-		164E706521458B73000068B4 /* Prueba_Liverpool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 164E706321458B73000068B4 /* Prueba_Liverpool.xcdatamodeld */; };
 		164E706721458B75000068B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164E706621458B75000068B4 /* Assets.xcassets */; };
 		164E706A21458B75000068B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 164E706821458B75000068B4 /* LaunchScreen.storyboard */; };
 		16C734BC2145D3AE00E187D9 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C734BB2145D3AE00E187D9 /* SearchResultsViewController.swift */; };
@@ -32,7 +31,6 @@
 		164E705C21458B73000068B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		164E705E21458B73000068B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		164E706121458B73000068B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		164E706421458B73000068B4 /* Prueba_Liverpool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prueba_Liverpool.xcdatamodel; sourceTree = "<group>"; };
 		164E706621458B75000068B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		164E706921458B75000068B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		164E706B21458B75000068B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				164E706621458B75000068B4 /* Assets.xcassets */,
 				164E706821458B75000068B4 /* LaunchScreen.storyboard */,
 				164E706B21458B75000068B4 /* Info.plist */,
-				164E706321458B73000068B4 /* Prueba_Liverpool.xcdatamodeld */,
 			);
 			path = Prueba_Liverpool;
 			sourceTree = "<group>";
@@ -258,7 +255,6 @@
 				16C734C12145D45000E187D9 /* BusquedaTableViewCell.swift in Sources */,
 				16C734BC2145D3AE00E187D9 /* SearchResultsViewController.swift in Sources */,
 				164E705F21458B73000068B4 /* ViewController.swift in Sources */,
-				164E706521458B73000068B4 /* Prueba_Liverpool.xcdatamodeld in Sources */,
 				160A38A3214594C000A8A972 /* TableViewCell.swift in Sources */,
 				160A38A5214596C000A8A972 /* Tools.swift in Sources */,
 				164E705D21458B73000068B4 /* AppDelegate.swift in Sources */,
@@ -464,19 +460,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		164E706321458B73000068B4 /* Prueba_Liverpool.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				164E706421458B73000068B4 /* Prueba_Liverpool.xcdatamodel */,
-			);
-			currentVersion = 164E706421458B73000068B4 /* Prueba_Liverpool.xcdatamodel */;
-			path = Prueba_Liverpool.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 164E705121458B73000068B4 /* Project object */;
 }

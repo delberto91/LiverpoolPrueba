@@ -2,7 +2,7 @@
 //  TableViewCell.swift
 //  Prueba_Liverpool
 //
-//  Created by Aldo Gutierrez Montoya on 9/9/18.
+//  Created by Delberto Martinez on 9/9/18.
 //  Copyright © 2018 Delberto Martinez. All rights reserved.
 //
 
