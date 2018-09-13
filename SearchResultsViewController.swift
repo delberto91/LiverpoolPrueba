@@ -18,15 +18,11 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-          finalArray = defaults.stringArray(forKey: "savedSearchArray") ?? [String]()
+          finalArray = defaults.stringArray(forKey: "savedSearchArray")!
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-         finalArray = defaults.stringArray(forKey: "savedSearchArray") ?? [String]()
-        
-        self.tableView.reloadData()
-    
+
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

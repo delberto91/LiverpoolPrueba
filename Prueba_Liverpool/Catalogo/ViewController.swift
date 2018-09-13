@@ -14,12 +14,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var liverpoolData : [LiverpoolData] = [LiverpoolData]()
   
       var currentTextField: UITextField?
-    
+    var searchResult = APIManager.sharedInstance.searchResult
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     var producto: String = ""
-    var searchResult = APIManager.sharedInstance.searchResult
+    
     override func viewDidLoad() {
         super.viewDidLoad()
    
