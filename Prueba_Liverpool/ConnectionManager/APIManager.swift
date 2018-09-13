@@ -8,11 +8,12 @@
 
 import UIKit
 import SwiftyJSON
+import CoreData
 class APIManager: NSObject {
     
     static let sharedInstance = APIManager()
 var searchResult = [String]()
-    
+
     func getProducts(product: String, onSuccess: @escaping(LiverpoolResponse) -> Void) {
         
         let liverpoolResponse : LiverpoolResponse = LiverpoolResponse()

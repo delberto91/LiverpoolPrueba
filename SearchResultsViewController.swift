@@ -13,16 +13,17 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
     
     let defaults = UserDefaults.standard
     var finalArray = [String]()
-   
+    
     private let cellIdentifier = "BusquedaTableViewCell"
     override func viewDidLoad() {
         super.viewDidLoad()
         
-          finalArray = defaults.stringArray(forKey: "savedSearchArray")!
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -30,14 +31,16 @@ class SearchResultsViewController: UIViewController, UITableViewDelegate, UITabl
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return finalArray.count
+        return searchResultSaved.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath as IndexPath) as! BusquedaTableViewCell
-   
-        cell.searchLabel.text = finalArray[indexPath.row]
+        
+    let result = searchResultSaved[indexPath.row]
+        
+        cell.searchLabel.text =   result.value(forKeyPath: "result") as? String
         
         return cell
     }

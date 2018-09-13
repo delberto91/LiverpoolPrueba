@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import CoreData
+var searchResultSaved : [NSManagedObject] = []
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate{
     
      private let cellIdentifier = "TableViewCell"
@@ -15,6 +16,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   
       var currentTextField: UITextField?
     var searchResult = APIManager.sharedInstance.searchResult
+ 
+    
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
@@ -34,6 +37,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewWillAppear(animated)
       
  
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        //2
+        let fetchRequest =
+            NSFetchRequest<NSManagedObject>(entityName: "Search")
+        
+        //3
+        do {
+            searchResultSaved = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Error. \(error), \(error.userInfo)")
+        }
+        
         }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
@@ -50,10 +72,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         producto = self.txtField.text!
         
-        self.searchResult.append(producto)
         
-        let defaults = UserDefaults.standard
-        defaults.set(self.searchResult, forKey: "savedSearchArray")
+        saveTheSearch(result: producto)
+        
+     
         
         
         activity.isHidden = false
@@ -106,7 +128,37 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
    
+    func saveTheSearch(result: String) {
+        
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        // 1
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let entity =
+            NSEntityDescription.entity(forEntityName: "Search",
+                                       in: managedContext)!
+        
+        let search = NSManagedObject(entity: entity,
+                                     insertInto: managedContext)
+        
+        // 3
+        search.setValue(result, forKeyPath: "result")
+        
+        // 4
+        do {
+            try managedContext.save()
+            searchResultSaved.append(search)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    }
 
 
-}
 
