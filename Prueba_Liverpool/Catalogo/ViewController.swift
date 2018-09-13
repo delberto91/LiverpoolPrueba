@@ -61,14 +61,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.view.isUserInteractionEnabled = false
         APIManager.sharedInstance.getProducts(product: producto, onSuccess: { json in
             DispatchQueue.main.async {
-                
+              // self.liverpoolData = []
                 self.liverpoolData = json.data
                 
                 self.tableView.reloadData()
-                
+               
                 self.activity.isHidden = true
                 self.activity.stopAnimating()
                 self.view.isUserInteractionEnabled = true
+                
+               
             }
             
         })
@@ -83,9 +85,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         view.endEditing(true)
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       
@@ -95,12 +94,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath as IndexPath) as! TableViewCell
-    
-        cell.productName.text = liverpoolData[indexPath.row].product_displayName
-        cell.productImage.downloadImageSync(downloadURL: liverpoolData[indexPath.row].sku_thumbnailImage, completion: { result in
+
+        cell.productName.text = liverpoolData[indexPath.row].product_displayName[indexPath.row]
+        
+        cell.productImage.downloadImageSync(downloadURL: liverpoolData[indexPath.row].sku_thumbnailImage[indexPath.row], completion:{ result in
             
         })
-        cell.productPrice.text = liverpoolData[indexPath.row].maximumListPrice
+        
+        cell.productPrice.text = liverpoolData[indexPath.row].maximumListPrice[indexPath.row]
         
         return cell
     }

@@ -15,9 +15,10 @@ open class LiverpoolResponse {
 
 open class LiverpoolData  {
     
-    var maximumListPrice : String = ""
-    var product_displayName: String = "" /*product.displayName*/
-    var sku_thumbnailImage: String = "" /*sku.thumbnailImage*/
+    var maximumListPrice : [String] = []
+    var product_displayName:  [String] = []
+    var sku_thumbnailImage: [String] = []
+
 }
 
 

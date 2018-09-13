@@ -47,23 +47,23 @@ var searchResult = [String]()
                                                 
                                                 if let thumbnailImage = attributes["sku.thumbnailImage"] as? [String] {
                                                     
-                                                    for i in thumbnailImage{
+                                                    for image in thumbnailImage{
                                                         
-                                                        liverpoolData.sku_thumbnailImage = i
+                                                        liverpoolData.sku_thumbnailImage.append(image)
                                                         
                                                         if let maximumListPrice = attributes["maximumListPrice"] as?  [String]{
                                                             
                                                             for maximumListPrice in maximumListPrice {
                                                                 
-                                                                liverpoolData.maximumListPrice = maximumListPrice
+                                                                liverpoolData.maximumListPrice.append(maximumListPrice)
                                                                 
                                                                 if let productDisplayName = attributes["product.displayName"] as? [String] {
                                                                     
                                                                     for product in productDisplayName {
-                                                                        liverpoolData.product_displayName = product
-                                                                     print("productDisplayName",liverpoolData.product_displayName)
+                                                            
+                                                                        liverpoolData.product_displayName.append(product)
                                                                         
-                                                                      liverpoolResponse.data.append(liverpoolData)
+                                                                        liverpoolResponse.data.append(liverpoolData)
                                                                     }
                                                                     
                                                                 }
